@@ -9,31 +9,31 @@ import os
 downloads = os.path.realpath("downloads")
 raw_files = os.path.realpath("raw_files")
 
-@Client.on_message(filters.command(["clean", "temizle"]) & ~filters.edited & filters.user(SUDO_USERS))
+@Client.on_message(filters.command(["temizle", "clean"]) & ~filters.edited & filters.user(SUDO_USERS))
 async def clear_downloads(_, message: Message):
     await message.delete()
     ls_dir = os.listdir(downloads)
     if ls_dir:
         for file in os.listdir(downloads):
             os.remove(os.path.join(downloads, file))
-        await message.reply_text("**{} botunun sunucusundaki tüm indirilen dosyaları silindi.**".format(bn) )
+        await message.reply_text("**✅ {} Botunun Daxilindəki bütün Yüklənən Dosyalar Silindi.**".format(bn) )
     else:
-        await message.reply_text("**İndirilen dosya yok.**")
+        await message.reply_text("✅ **🗂 Yüklənən Dosya Yox.**")
     ls_dir = os.listdir(raw_files)
     if ls_dir:
         for file in os.listdir(raw_files):
             os.remove(os.path.join(raw_files, file))
-        await message.reply_text("**{} botundaki tüm RAW dosyaları silindi.**".format(bn) )
+        await message.reply_text("**✅ {} Botundakı Bütün RAW Dosyaları Silindi.**".format(bn) )
     else:
-        await message.reply_text("**RAW dosyaları bulunamadı.**")
+        await message.reply_text("❌ **🗂 RAW Dosyaları Tapılmadı.**")
     pth = os.path.realpath(".")
     ls_dir = os.listdir(pth)
     if ls_dir:
         for dta in os.listdir(pth):
             os.system("rm -rf *.webm *.jpg")
-        await message.reply_text("**Gereksiz dosyalar silindi.**")
+        await message.reply_text("✅ **🗂 Lazımsız Dosyalar Silindi.**")
     else:
-        await message.reply_text("**Gereksiz dosyalar bulanamadı.**")
+        await message.reply_text("❌ **🗂 Lazımsız Dosyalar Tapılmadı.**")
 
         
 
