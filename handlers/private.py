@@ -40,23 +40,23 @@ async def start(_, message: Message):
   
 
 
-@Client.on_message(command(["melumat", f"bilgi@{BOT_USERNAME}"]))
+@Client.on_message(command(["məlumat", f"məlumat@{BOT_USERNAME}"]))
 async def bilgi(_, message: Message):
-      await message.reply_text(" ❗ Not:\n Botun aktif çalışması için şu üç yetkiye ihtiyaç vardır:\n- Mesaj silme yetkisi,\n- Bağlantı ile davet etme yetkisi,\n- Sesli sohbeti yönetme yetkisi.", 
+      await message.reply_text("     📎 QEYD:\n\n Botun Aktif İşləməsi Üçün 3 Yetkiyə Ehdiyacı var:\n- Mesaj silmə yetkisi,\n- Bağlantı ile dəvət etmə yetkisi,\n- Səsli söhbeti İdaraə Etmə yetkisi.", 
       reply_markup=InlineKeyboardMarkup(
              [
                  [
                      InlineKeyboardButton(
-                         "🔴 Herkes için komutlar", callback_data="herkes")
+                         "📚 Hərkəs Üçün Əmr", callback_data="herkes")
                  ],[                     
                      InlineKeyboardButton(
-                         "⚫ Adminler için komutlar", callback_data="admin")
+                         "📚 Adminlər Üçün Əmr", callback_data="admin")
                  ],[
                      InlineKeyboardButton(
-                         "Ana menü🏠", callback_data="cbstart")
+                         "📱 Əsas Menu", callback_data="cbstart")
                  ],[
                      InlineKeyboardButton(
-                         "⚙ Geliştirici", url="https://t.me/Mahoaga")
+                         "⚡ Hazırladı", url="https://t.me/sesizKOLGE")
                  ]
              ]
          )
@@ -65,24 +65,24 @@ async def bilgi(_, message: Message):
 
 @Client.on_callback_query(filters.regex("cbbilgi"))
 async def cbbilgi(_, query: CallbackQuery):
-    await query.edit_message_text(" ❗ Not:\nBotun aktif çalışması için şu üç yetkiye ihtiyaç vardır:\n- Mesaj silme yetkisi,\n- Bağlantı ile davet etme yetkisi,\n- Sesli sohbeti yönetme yetkisi.", 
+    await query.edit_message_text("    📎 QEYD:\nBotun Aktif İşləməsi Üçün 3 Yetkiyə Ehdiyac Var:\n- Mesaj Silmə yetkisi,\n- Bağlantı ilə dəvet etmə yetkisi,\n- Səsli sohbeti İdarə Etmə yetkisi.", 
     reply_markup=InlineKeyboardMarkup(
       [
         [
           InlineKeyboardButton(
-            "✨Herkes için Komutlar", callback_data ="herkes")
+            "📚 Hərkıs Üçün Əmr", callback_data ="herkes")
         ],
         [
           InlineKeyboardButton(
-            "👑Yönetici Komutları",callback_data ="admin")
+            "👮‍♂️ Admin Əmirləri",callback_data ="admin")
         ],
         [
           InlineKeyboardButton(
-            "🏠Ana Menü", callback_data="cbstart")
+            "📱 Əsas Menu", callback_data="cbstart")
         ],
         [
           InlineKeyboardButton(
-            "⚙ Geliştirici", url="https://t.me/Mahoaga")
+            "👨‍💻 OWNER 🇦🇿", url="https://t.me/sesizKOLGE")
         ]
       ]
      ))
@@ -90,7 +90,7 @@ async def cbbilgi(_, query: CallbackQuery):
 
 @Client.on_callback_query(filters.regex("herkes"))
 async def herkes(_, query: CallbackQuery):
-    await query.edit_message_text(f"""<b>Selam {query.from_user.mention}!\nBu botun herkes için komut menüsü 😉\n\n ▶️ /oynat - şarkı çalmak için youtube url'sine veya şarkı dosyasına yanıt verme\n ▶️ /oynat <song name> - istediğiniz şarkıyı çal\n 🔴 \n 🎵 /bul <song name> - istediğiniz şarkıları hızlı bir şekilde bulun\n 🎵 /vbul istediğiniz videoları hızlı bir şekilde bulun\n 🔍 /ara <query> - youtube'da ayrıntıları içeren videoları arama\n\n</b>""",
+    await query.edit_message_text(f"""<b>Salam 👋 {query.from_user.mention}!\nBu Botun Hərkəs Üçün Əmr Menusudu ⚡\n\n ▶️ /oynat - şarkı çalmak için youtube url'sine veya şarkı dosyasına yanıt verme\n ▶️ /oynat <song name> - istediğiniz şarkıyı çal\n 🔴 \n 🎵 /bul <song name> - istediğiniz şarkıları hızlı bir şekilde bulun\n 🎵 /vbul istediğiniz videoları hızlı bir şekilde bulun\n 🔍 /ara <query> - youtube'da ayrıntıları içeren videoları arama\n\n</b>""",
     reply_markup=InlineKeyboardMarkup(
              [
                  [
