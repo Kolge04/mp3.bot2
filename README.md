@@ -1,17 +1,12 @@
-<h2 align="centre">Telegram Sohbet Mp3 Oynatıcı 🎵</h2>
+<h2 align="centre">Telegram Qruplarında  Mp3 Musiqi Çaəar 🎵</h2>
 
-### Güncellendi aktif.... 😇
-<p align="center">
-  <img src="https://telegra.ph/file/a4fa687ed647cfef52402.jpg">
-</p> 
+### Bot Güncellendi aktif.... 😇
 
-<h3>Sürümler 📮</h3>
 
-- pyrogram Set according to your request
-
-### Komutlar Genel 🍭
-- `/play` - şarkı çalmak için youtube url'sine veya şarkı dosyasına yanıt verme
-- `/play` - istediğiniz şarkıyı çal
+### Güncəl Əmrlər 🍭
+- `/play` - <Musiqi Adı> 
+- `/play` - <Musiqi Adı> <Sənətci Adı>
+- `/play` - <URL>
 - `/bul` - istediğiniz şarkıları hızlı bir şekilde indirin 
 - `/ara` - youtube'da ayrıntıları içeren videoları arama
 
@@ -30,4 +25,4 @@
 
 <h4>🔺 Herokuya Dağıt 🔻</h4>
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Mehmetbaba55/EfsaneMusic)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Kolge04/mp3.bot2)
