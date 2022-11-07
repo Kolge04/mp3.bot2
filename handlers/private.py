@@ -108,7 +108,7 @@ async def herkes(_, query: CallbackQuery):
 
 @Client.on_callback_query(filters.regex("admin"))
 async def admin(_, query: CallbackQuery):
-    await query.edit_message_text(f"""<b>Salam 👋 {query.from_user.mention}!\nBu Botun Adminler Üçün Əmrlər Menusudu ⚡\n\n▶️ /resume - Musiqi Oxutmağa Davam Edər\n⏸️ /pause - Səsləndirilən Musiqini Dayandirar\n⏩ /skip- Növbədəki Musiqiyə Keçər.\n ⏺ /end - Səsli Yayındakı Musiqini Sonlandırar\n💂‍♂️ /yetgiver - Userə İsdifadəçi Yetgisi Verər\n💂‍♂️ /yetgial - Userə Verilən İsdifadəçi Yetgisin Alar\n🤖 /asistan - Asistanı Qrupunuza Qatar\n♻️ /reload - Botu Yenidən Başladar\n⚜ /alive - Botun İşləyib İşləmədəyin Yoxlayar\n\n</b>""",
+    await query.edit_message_text(f"""<b>Salam 👋 {query.from_user.mention}!\nBu Botun Adminler Üçün Əmrlər Menusudu ⚡\n\n▶️ /resume - Musiqi Oxutmağa Davam Edər\n\n⏸️ /pause - Səsləndirilən Musiqini Dayandirar\n\n⏩ /skip- Növbədəki Musiqiyə Keçər.\n\n ⏺ /end - Səsli Yayındakı Musiqini Sonlandırar\n\n💂‍♂️ /yetgiver - Userə İsdifadəçi Yetgisi Verər\n\n💂‍♂️ /yetgial - Userə Verilən İsdifadəçi Yetgisin Alar\n\n🤖 /asistan - Asistanı Qrupunuza Qatar\n\n♻️ /reload - Botu Yenidən Başladar\n\n⚜ /alive - Botun İşləyib İşləmədəyin Yoxlayar\n\n</b>""",
     reply_markup=InlineKeyboardMarkup(
              [
                  [
