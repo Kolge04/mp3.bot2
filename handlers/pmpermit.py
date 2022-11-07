@@ -18,7 +18,7 @@ async def pmPermit(client: USER, message: Message):
                 return
             await USER.send_message(
                 message.chat.id,
-                "Merhaba, Müzik asistanı hizmetidir.\n\n ❗️ kurallar:\n - Sohbete izin yok.\n - Bilgi ve Komutlarım için grubunuz sohbetinde **/bilgi** yazarsanız. (Asistan sohbetine bilgi yazmayın.) Müzik komutlarını ögrenebilirsiniz. \n - İstenmeyen postaya izin verilmez \n\n 🚨 **Userbot Grubunuza Katılmıyorsa >> DAVET KATILMA ÖZELLİĞİ VE SES YÖNETİMİ ÖZELLİKLERİ VER YÖNETİCİ YAPIN. <<**\n\n ⚠️ DİKKAT: Burada bir mesaj gönderiyorsanız. Yöneticinin iletinizi göreceği anlamına gelir.\n - Özel bilgileri burada paylaşmayınız. (Müzik Botunu Lütfen Gizli Grublara almayınız.) 📚 Bilgi için [Developer 🧩](https://t.me/Mahoaga) 🇹🇷\n",
+                "Salam 👋, Musiqi Asistanı Xirmətinizdədir.\n\n ❗️ ƏMRLƏR:\n - Şəxsi Söhbətdə İcazə Yoxdur.\n - Məlumat Və Əmrlər Üçün Qrupunuzun Söhbətində**/məlumat** Yazın . (Asistanın Şəxsi Sphbətinə Məlumat Yazmayın.) Musiqi Əmirlırini Öyrənə Bilərsiz.\n - İsdənmiyən Posta İcazə Verilməz.\n\n 🚨 **Userbot Grupunuza Qatılmırsa >> DAVƏT QATILMA ÖZƏLLİYİ VƏ SƏS YÖNƏTİMİ ÖZƏLLİKLƏRİ VER ADMİN EDİN. <<**\n\n ⚠️ DİQQƏT: Burda bir mesaj göndərirsəniz, Adminim göndərdiyinizi görəcəkdir.\n - Şəxsi məlumatlarıburda paylaşmayın. (Musiqi Botunu Zəhmıt Olmasa Gizli Qrublara Almayın) 📚 Məlumat Üçün [OWNER 👨‍💻](https://t.me/sesizKOLGE) 🇹🇷\n",
             )
             return
  
@@ -32,11 +32,11 @@ async def bye(client: Client, message: Message):
         queryy = text[1]
         if queryy == "on":
             PMSET = True
-            await message.reply_text("PM İzin Etkin")
+            await message.reply_text("✅  PM İcazəsi Açıq")
             return
         if queryy == "off":
             PMSET = None
-            await message.reply_text("PM İzin Devre Dışı")
+            await message.reply_text("⚡ PM İcazəsi Qapalı")
             return
 
 @USER.on_message(filters.text & filters.private & filters.me)        
@@ -44,7 +44,7 @@ async def autopmPermiat(client: USER, message: Message):
     chat_id = message.chat.id
     if not chat_id in pchats:
         pchats.append(chat_id)
-        await message.reply_text("**Hey Userbot Yazışması artık başarılı.**")
+        await message.reply_text("**Userbot Yazışması Artıq Uğurlu.**")
         return
     message.continue_propagation()    
     
@@ -53,7 +53,7 @@ async def pmPermiat(client: USER, message: Message):
     chat_id = message.chat.id
     if not chat_id in pchats:
         pchats.append(chat_id)
-        await message.reply_text("Yaklaşık olarak PM")
+        await message.reply_text("Təxmin Olaraq PM")
         return
     message.continue_propagation()    
     
@@ -63,6 +63,6 @@ async def rmpmPermiat(client: USER, message: Message):
     chat_id = message.chat.id
     if chat_id in pchats:
         pchats.remove(chat_id)
-        await message.reply_text("Bu şekilde PM")
+        await message.reply_text("Bu Şəkildə PM")
         return
     message.continue_propagation()
