@@ -11,8 +11,8 @@
 - `/ara` - youtube'da ayrıntıları içeren videoları arama
 
 #### Yalnızca yöneticiler 
-- `/ver` - üyeler için extra yetki 
-- `/al` - üyeler için verilen yetki alınır (Herkes için olan komutları kullanır) 
+- `/yetgiver` - üyeler için extra yetki 
+- `/yetgial` - üyeler için verilen yetki alınır (Herkes için olan komutları kullanır) 
 - `/pause` - şarkı çalmayı duraklatma 
 - `/resume` - şarkı çalmaya devam et 
 - `/skip` - sonraki şarkıyı çal 
