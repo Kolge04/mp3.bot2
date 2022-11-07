@@ -55,7 +55,7 @@ async def stop(_, message: Message):
         await callsmusic.pytgcalls.leave_group_call(chat_id)
         await _.send_message(
             message.chat.id,
-            "🎧 **🛰 Səsli Yayımla Əlaqə Kəsildi !\n🎧**✅ Musiqi Sonlandırıldı**\n\n**📢 Burda Sənində Reklamın Ola Bilər !\n☎️ Əlaqə :- @sesizKOLGE**"
+            "🎧 **🛰 Səsli Yayımla Əlaqə Kəsildi !\n🎧 **✅ Musiqi Sonlandırıldı**\n\n**📢 Burda Sənində Reklamın Ola Bilər !\n☎️ Əlaqə :- @sesizKOLGE**"
         )
     
 @Client.on_message(command(["nobeti", "skip"]) & other_filters)
@@ -102,12 +102,12 @@ async def authenticate(client, message):
         new_admins = admins[message.chat.id]
         new_admins.append(message.reply_to_message.from_user.id)
         admins[message.chat.id] = new_admins
-        await message.reply("✅ Userə Yetki Verildi.")
+        await message.reply("✅ Userə Yetki Verildi!\n👮‍♂️ Artıq Səsli Söhbəti İdarə Edə Bilər")
     else:
         await message.reply("✔ User Onsuzda Yetkilidir!")
 
 
-@Client.on_message(command(["al", "yetkial"]) & other_filters)
+@Client.on_message(command(["al", "yetgial"]) & other_filters)
 @authorized_users_only
 async def deautenticate(client, message):
     global admins
@@ -118,9 +118,9 @@ async def deautenticate(client, message):
         new_admins = admins[message.chat.id]
         new_admins.remove(message.reply_to_message.from_user.id)
         admins[message.chat.id] = new_admins
-        await message.reply("kullanıcı yetkisiz")
+        await message.reply("❌ Userin Yetgisi Alındı!\n👮‍♂️ Artıq Səsli Söhbəti İdarə Edə Bilməz")
     else:
-        await message.reply("✅ Userin Yetkisi Allndı !")
+        await message.reply("❌ Onsuzda Userin Yetgisi yoxdur! !")
 
 
 # Sesli sohbet için 0-200 arası yeni komut eklenmiş oldu. 
@@ -162,5 +162,5 @@ async def update_admin(client, message):
     admins[message.chat.id] = new_admins
     await client.send_message(
         message.chat.id,
-        "✅ Bot Uğurla İşləyir.!\n✅ Heş Bir Problem yoxdur"
+        "✅ Bot Uğurla İşləyir.!\n✅ Heş Bir Problem yoxdur\n\n✅ Bot Yenidən Başladıldı\n✅ Admin Siyahısı Yenilındi"
     )
