@@ -16,11 +16,11 @@ import pyrogram
 
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
-@app.on_message(pyrogram.filters.command(["ara"]))
+@app.on_message(pyrogram.filters.command(["search"]))
 async def ytsearch(_, message: Message):
     try:
         if len(message.command) < 2:
-            await message.reply_text("Bana sanatçı ismi ya da Şarkı ismi verin!")
+            await message.reply_text("Mənə Sənıtci Adı ya da Musiqi Adı Vein!")
             return
         query = message.text.split(None, 1)[1]
         m = await message.reply_text("Arıyorum....")
@@ -28,9 +28,9 @@ async def ytsearch(_, message: Message):
         i = 0
         text = ""
         while i < 4:
-            text += f"İsim - {results[i]['title']}\n"
-            text += f"Süre - {results[i]['duration']}\n"
-            text += f"Görüntülenme - {results[i]['views']}\n"
+            text += f"Başlıq - {results[i]['title']}\n"
+            text += f"Vaxt - {results[i]['duration']}\n"
+            text += f"Bqxış Sayı - {results[i]['views']}\n"
             text += f"Kanal - {results[i]['channel']}\n"
             text += f"https://youtube.com{results[i]['url_suffix']}\n\n"
             i += 1
