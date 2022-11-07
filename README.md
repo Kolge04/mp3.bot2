@@ -6,7 +6,7 @@
 ### Güncəl Əmrlər 🍭
 - `/play` - <Musiqi Adı> 
 - `/play` - <Musiqi Adı> <Sənətci Adı>
-- `/play` - <URL>
+- `/play` - <URL(YouTube)>
 - `/bul` - istediğiniz şarkıları hızlı bir şekilde indirin 
 - `/ara` - youtube'da ayrıntıları içeren videoları arama
 
