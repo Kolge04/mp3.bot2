@@ -20,7 +20,7 @@ logging.getLogger("pyrogram").setLevel(logging.WARNING)
 async def ytsearch(_, message: Message):
     try:
         if len(message.command) < 2:
-            await message.reply_text("Mənə Sənıtci Adı ya da Musiqi Adı Vein!")
+            await message.reply_text("🎧  Mənə Sənıtci Adı ya da Musiqi Adı Vein!")
             return
         query = message.text.split(None, 1)[1]
         m = await message.reply_text("🔎 ** 🎧 AXTARIRAM...")
