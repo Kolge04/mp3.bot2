@@ -1,43 +1,43 @@
 {
-  "name": "Efsane Music",
-  "description": "Telegram'ınızın Grup Sesli Sohbeti'nde şarkı çalmak için Açık Kaynaklı bot. Powered by Mehmetbaba55.",
+  "name": "𝐊 𝐎 𝐋 𝐆 Ə _ 𝐌 𝐏 3 🎧 ",
+  "description": "Telegram qruplarınızda səsli yayın vasdəsi ilə musiqi dinləyə bilərsiz.",
   "keywords": ["music", "voicechat", "telegram"],
-  "repository": "https://github.com/Mehmetbaba55/EfsaneMusic",
+  "repository": "https://github.com/Kolge04/mp3.bot2",
   "stack": "container",
   "env": {
     "SESSION_NAME": {
-      "description": "Pyrogram oturum dizesi (Replit.com)",
+      "description": "Pyrogram Session i daxil edin (@StarkStringGenBot)",
       "required": true
     },
     "BOT_TOKEN": {
-      "description": "Bir bot belirteci @botfather ile alınız",
+      "description": "Bot TOKEN in daxil edin (@botfather).",
       "required": true
     },
     "BOT_NAME": {
-      "description": "Müzik Oynatıcı Bot Adınız.",
+      "description": "Musiqi Bot Adınız.",
       "required": false,
       "value": ""
     },
     "BOT_USARNAME": {
-      "description": "Müzik Oynatıcı Bot Kullanıcı İsmi @ olmadan yazınız.",
+      "description": "Musiqi Oynatıcı Bot tağ adlnı daxil edin (@ olmadan yazın).",
       "required": true,
       "value": ""
      
     },
     "API_ID": {
-      "description": "my.telegram'dan uygulama kimliği.org/apps",
+      "description": "APİ_ID i daxil edin (my.telegram.org).",
       "required": true
     },
     "API_HASH": {
-      "description": "My.telegram'dan uygulama apı-hash.org/apps",
+      "description": "APİ_HASH ı daxil edin (my.telegram.org)",
       "required": true
     },
     "SUDO_USERS": {
-      "description": "Her yerde yönetici olarak sayılan kullanıcı kimliklerinin listesi (Müzik hesabınının id'si).",
+      "description": "Her yrdə yönətici olaraq sayılan ASİSTAN ın İD in daxil edin  (ASİSTAN hesabınının id'si).",
       "required": true
     },
     "DURATION_LIMIT": {
-      "description": "İndirmeler için en fazla ses süresi sınırı (minutes).",
+      "description": "Yükləmələr üçün ən çox səs vaxtı (minutes).",
       "required": true,
       "value": "55"
     }
