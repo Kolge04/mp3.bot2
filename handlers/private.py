@@ -22,7 +22,7 @@ async def start(_, message: Message):
                         "🔊 ASİSTAN", url="https://t.me/KolgeMp3Asistan"
                     ),
                     InlineKeyboardButton(
-                        "👨‍💻 OWNER", url="https://t.me/sesizKOLGE"
+                        "DİGƏR BOTUM ⚡", url="https://t.me/kolgetaggerbot"
                     )
                 ],
                 [
@@ -56,7 +56,7 @@ async def bilgi(_, message: Message):
                          "📱 Əsas Menu", callback_data="cbstart")
                  ],[
                      InlineKeyboardButton(
-                         "⚡ Hazırladı", url="https://t.me/sesizKOLGE")
+                         "DİGƏR BOTUM ⚡", url="https://t.me/kolgetaggerbot")
                  ]
              ]
          )
@@ -90,16 +90,16 @@ async def cbbilgi(_, query: CallbackQuery):
 
 @Client.on_callback_query(filters.regex("herkes"))
 async def herkes(_, query: CallbackQuery):
-    await query.edit_message_text(f"""<b>Salam 👋 {query.from_user.mention}!\nBu Botun Hərkəs Üçün Əmr Menusudu ⚡\n\n ▶️ /oynat - şarkı çalmak için youtube url'sine veya şarkı dosyasına yanıt verme\n ▶️ /oynat <song name> - istediğiniz şarkıyı çal\n 🔴 \n 🎵 /bul <song name> - istediğiniz şarkıları hızlı bir şekilde bulun\n 🎵 /vbul istediğiniz videoları hızlı bir şekilde bulun\n 🔍 /ara <query> - youtube'da ayrıntıları içeren videoları arama\n\n</b>""",
+    await query.edit_message_text(f"""<b>Salam 👋 {query.from_user.mention}!\nBu Botun Hərkəs Üçün Əmr Menusudu ⚡\n\n ▶️ /play - •Musiqi Adı•\n/play •URL°YouTube°•\n 🎵 /song <Musiqi Adı> - Musiqi Yükləyər\n 🎵 /vsomg <Link(YouTube)> Vidyo Yükləyər\n 🔍 /search <Link> - YouTube Dən Oxşar Musiqi, Vidyoları Tapar \n\n</b>""",
     reply_markup=InlineKeyboardMarkup(
              [
                  [
                      InlineKeyboardButton(
-                         "⚙ Geliştirici", url="https://t.me/Mahoaga")
+                         "👨‍💻 OWNER 🇦🇿", url="https://t.me/sesizKOLGE")
                  ],
                  [
                      InlineKeyboardButton(
-                         "⬅️ Geri ⬅️", callback_data="cbbilgi")
+                         "⬅️ GERİ ⬅️", callback_data="cbbilgi")
                  ] 
              ]
          )
@@ -108,12 +108,12 @@ async def herkes(_, query: CallbackQuery):
 
 @Client.on_callback_query(filters.regex("admin"))
 async def admin(_, query: CallbackQuery):
-    await query.edit_message_text(f"""<b>Selam {query.from_user.mention}!\nBu botun adminler için komut menüsü 🤩\n\n ▶️ /devam - şarkı çalmaya devam et\n ⏸️ /durdur - çalan parçayı duraklatmak için\n 🔄 /atla- Sıraya alınmış müzik parçasını atlatır.\n ⏹ /son - müzik çalmayı durdurma\n 🔼 /ver botun sadece yönetici için kullanılabilir olan komutlarını kullanabilmesi için kullanıcıya yetki ver\n 🔽 /al botun yönetici komutlarını kullanabilen kullanıcının yetkisini al\n\n ⚪ /asistan - Müzik asistanı grubunuza katılır.\n\n</b>""",
+    await query.edit_message_text(f"""<b>Salam 👋 {query.from_user.mention}!\nBu Botun Adminler Üçün Əmrlər Menusudu ⚡\n\n▶️ /resume - Musiqi Oxutmağa Davam Edər\n⏸️ /pause - Səsləndirilən Musiqini Dayandirar\n⏩ /skip- Növbədəki Musiqiyə Keçər.\n ⏺ /end - Səsli Yayındakı Musiqini Sonlandırar\n💂‍♂️ /yetgiver - Userə İsdifadəçi Yetgisi Verər\n💂‍♂️ /yetgial - Userə Verilən İsdifadəçi Yetgisin Alar\n🤖 /asistan - Asistanı Qrupunuza Qatar\n♻️ /reload - Botu Yenidən Başladar\n⚜ /alive - Botun İşləyib İşləmədəyin Yoxlayar\n\n</b>""",
     reply_markup=InlineKeyboardMarkup(
              [
                  [
                      InlineKeyboardButton(
-                         "⚙ Geliştirici", url="https://t.me/Mahoaga")
+                         "👨‍💻 OWNER 🇦🇿", url="https://t.me/sesizKOLGE")
                  ],
                  [
                      InlineKeyboardButton(
@@ -126,28 +126,28 @@ async def admin(_, query: CallbackQuery):
 
 @Client.on_callback_query(filters.regex("cbstart"))
 async def cbstart(_, query: CallbackQuery):
-    await query.edit_message_text(f"""**Merhaba {query.from_user.mention} 🎵\nBen {bot}!\nSesli sohbetlerde müzik çalabilen botum. Ban yetkisiz, Ses yönetimi yetkisi verip, Asistanı gruba ekleyiniz.\n\nDüzen Tasarım [Talia Müzik 🎙️](https://t.me/Sohbetdestek).**""",
+    await query.edit_message_text(f"""**Salam 👋 {query.from_user.mention} 🎵\nMən {bot}!\nSəsli Söhbətlərdə Musiqi Oxuya Bilən Musiqi Botuyam. Ban Yetkisi Olmadan, Səsli Söhbəti İdarə Etmə Yetgisi Verib, Asistanı Qruba Qatın.\n\n👨‍💻 OWNER [𝐊 𝐎 𝐋 𝐆 Ə _ 𝐌 𝐏 3 🎧](https://t.me/sesizKOLGE).**""",
          reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "➕ ❰ Grubuna Ekle ❱ ➕", url=f"https://t.me/Efsanestar_bot?startgroup=true"
+                        "➕ ❰ Qrupuna Eklə ❱ ➕", url=f"https://t.me/Kolgempbot?startgroup=true"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "🔊 Asistan", url="https://t.me/Taliamusicasistant"
+                        "🔊 Asistan", url="https://t.me/KolgeMp3Asistan"
                     ),
                     InlineKeyboardButton(
-                        "💬 Sohbet", url="https://t.me/Sohbetskyfall"
+                        "👨‍💻 OWNER 🇦🇿", url="https://t.me/sesizKOLGE"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "🌀 Komutlar" , callback_data= "cbbilgi"
+                        "📚 ƏMRLƏR" , callback_data= "cbbilgi"
                     ),
                     InlineKeyboardButton(
-                        "Resmi Kanal 🇹🇷", url=f"https://t.me/Sohbetdestek"
+                        " DİGƏR BOTUM ⚡", url=f"https://t.me/kolgetaggerbot"
                     )
                 ]
                 
