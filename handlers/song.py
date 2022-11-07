@@ -49,7 +49,7 @@ def bul(client, message):
         )
         print(str(e))
         return
-    m.edit("📥 **🎧 YÜKLƏNİR...**")
+    m.edit("📥 ** 🎧 YÜKLƏNİR...**")
     try:
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)
@@ -107,14 +107,14 @@ async def vsong(client, message):
     except Exception as e:
         print(e)
     try:
-        msg = await message.reply("📥 **🎬  YÜKLƏNİR...**")
+        msg = await message.reply("🔎 ** 🎬  AXTARILIR...**")
         with YoutubeDL(ydl_opts) as ytdl:
             ytdl_data = ytdl.extract_info(link, download=True)
             file_name = ytdl.prepare_filename(ytdl_data)
     except Exception as e:
         return await msg.edit(f"🚫 **XƏTA:** {e}")
     preview = wget.download(thumbnail)
-    await msg.edit("📤 **🎬 YÜKLƏNİR...**")
+    await msg.edit("📥 ** 🎬 YÜKLƏNİR...**")
     await message.reply_video(
         file_name,
         duration=int(ytdl_data["duration"]),
