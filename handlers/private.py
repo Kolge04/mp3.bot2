@@ -47,16 +47,16 @@ async def bilgi(_, message: Message):
              [
                  [
                      InlineKeyboardButton(
-                         "📚 Hərkəs Üçün Əmr", callback_data="herkes")
+                         "📚 Hərkəs Üçün Əmr 👥", callback_data="herkes")
                  ],[                     
                      InlineKeyboardButton(
-                         "📚 Adminlər Üçün Əmr", callback_data="admin")
+                         "📚 Adminlər Üçün Əmr 👤", callback_data="admin")
                  ],[
                      InlineKeyboardButton(
-                         "📱 Əsas Menu", callback_data="cbstart")
+                         "📱 Əsas Meynu", callback_data="cbstart")
                  ],[
                      InlineKeyboardButton(
-                         "DİGƏR BOTUM ⚡", url="https://t.me/kolgetaggerbot")
+                         "🤖 𝐁 𝐎 𝐓 𝐋 𝐀 𝐑 𝐈 𝐌 ⚡", url="https://t.me/menimbotlarim")
                  ]
              ]
          )
@@ -78,7 +78,7 @@ async def cbbilgi(_, query: CallbackQuery):
         ],
         [
           InlineKeyboardButton(
-            "📱 Əsas Menu", callback_data="cbstart")
+            "📱 Əsas Meynu", callback_data="cbstart")
         ],
         [
           InlineKeyboardButton(
@@ -147,7 +147,7 @@ async def cbstart(_, query: CallbackQuery):
                         "📚 ƏMRLƏR" , callback_data= "cbbilgi"
                     ),
                     InlineKeyboardButton(
-                        " DİGƏR BOTUM ⚡", url=f"https://t.me/kolgetaggerbot"
+                        "🤖 𝐁 𝐎 𝐓 𝐋 𝐀 𝐑 𝐈 𝐌 ⚡", url=f"https://t.me/menimbotlarim"
                     )
                 ]
                 
