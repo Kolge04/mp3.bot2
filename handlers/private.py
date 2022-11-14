@@ -22,7 +22,7 @@ async def start(_, message: Message):
                         "🔊 ASİSTAN", url="https://t.me/KolgeMp3Asistan"
                     ),
                     InlineKeyboardButton(
-                        "DİGƏR BOTUM ⚡", url="https://t.me/kolgetaggerbot"
+                        "🤖 𝐁 𝐎 𝐓 𝐋 𝐀 𝐑 𝐈 𝐌 ⚡", url="https://t.me/menimbotlarim  "
                     )
                 ],
                 [
